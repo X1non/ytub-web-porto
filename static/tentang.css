@@ -86,6 +86,11 @@
     right: 2.5em;
     padding: 0;
   }
+  #RPsbs-1445 .cs-picture .carousel-prev .prev-icon,
+  #RPsbs-1445 .cs-picture .carousel-next .next-icon {
+    stroke: var(--primary);
+    stroke-width: 25px;
+  }
   #RPsbs-1445 .cs-picture .carousel-prev .prev-icon:active,
   #RPsbs-1445 .cs-picture .carousel-next .next-icon:active {
     fill: var(--primaryLight);
@@ -102,7 +107,7 @@
   #RPsbs-1445 .cs-picture .carousel-bullet {
     width: 0.9rem;
     height: 0.9rem;
-    border: none;
+    border: var(--primary) 1px solid;
     background: #fff;
     cursor: pointer;
     border-radius: 50%;
