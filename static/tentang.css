@@ -193,24 +193,36 @@
     position: relative;
     z-index: 1;
   }
-  #services-1724 .cs-item:hover .cs-picture::after {
+  #services-1724 .cs-show-short-text:hover ~ .cs-picture::after {
     opacity: 0.6;
   }
-  #services-1724 .cs-item:hover .cs-picture img {
+  #services-1724 .cs-show-short-text:hover ~ .cs-picture img {
     transform: scale(1.2);
   }
-  #services-1724 .cs-item:hover .cs-number {
+  #services-1724 .cs-show-short-text:hover ~ .cs-item-content .cs-number {
     opacity: 1;
     top: clamp(1rem, 2.3vw, 2rem);
   }
-  #services-1724 .cs-item:hover .cs-short-text {
+  #services-1724 .cs-show-short-text:hover ~ .cs-item-content .cs-short-text {
     opacity: 1;
     bottom: 50%;
     transform: translateY(50%);
   }
-  #services-1724 .cs-item:hover .cs-h3 {
+  #services-1724 .cs-show-short-text:hover ~ .cs-item-content .cs-h3 {
     opacity: 1;
     bottom: clamp(1rem, 2.3vw, 2rem);
+  }
+  #services-1724 .cs-show-short-text {
+    display: flex;
+    position: absolute;
+    bottom: 17.5px;
+    right: 17.5px;
+    cursor: pointer;
+    z-index: 2;
+    transition: rotate 0.5s;
+  }
+  #services-1724 .cs-show-short-text:hover {
+    rotate: 180deg;
   }
   #services-1724 .cs-item-content {
     text-decoration: none;
@@ -343,5 +355,28 @@
   }
   #services-1724 .cs-item {
     grid-column: span 1;
+  }
+  #services-1724 .cs-item:hover .cs-picture::after {
+    opacity: 0.6;
+  }
+  #services-1724 .cs-item:hover .cs-picture img {
+    transform: scale(1.2);
+  }
+  #services-1724 .cs-item:hover .cs-number {
+    opacity: 1;
+    top: clamp(1rem, 2.3vw, 2rem);
+  }
+  #services-1724 .cs-item:hover .cs-short-text {
+    opacity: 1;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  #services-1724 .cs-item:hover .cs-h3 {
+    opacity: 1;
+    bottom: clamp(1rem, 2.3vw, 2rem);
+  }
+  #services-1724 .cs-show-short-text {
+    opacity: 0;
+    cursor: default;
   }
 }
